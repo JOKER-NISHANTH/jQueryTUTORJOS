@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add ANd Remove Class Function</title>
+    <style>.design{
+        color: black;
+       background-color:red;
+        font-size: 25px;
+        font-family: fantasy;
+    }</style>
+</head>
+<body>
+  
+    <h3 class='design'>Welcome to Add ANd Remove Function Guy's</h3>
+    <button id="b1">SHOW</button>
+    <button id="b2">HIDE</button>
+
+    <script src="js/JQuery.js"></script>
+    <script>
+        $("document").ready(function(){
+            $('#b1').click(function(){
+                $('h3').addClass('design');
+            });
+            $('#b2').click(function(){
+                $('h3').removeClass('design');
+            });
+        });
+    </script>
+</body>
+</html>

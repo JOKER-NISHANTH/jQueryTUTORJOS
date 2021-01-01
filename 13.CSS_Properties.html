@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appling CSS Properties</title>
+</head>
+<body>
+    <h1>Welcome to Learning CSS Properties</h1>
+    <h3>  1.Single  2.Multiple </h3>
+    <script src="js/JQuery.js"></script>
+    <script>
+        $("document").ready(function(){
+            //Single
+            $('h1').css('color','blue');
+            //Multiple
+            $('h1').css({
+                'background':'red',
+                "font-size":'20px',
+                'padding':'10px'
+            });
+        });
+    </script>
+</body>
+</html>

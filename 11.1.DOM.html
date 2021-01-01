@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Query</title><style>li{color:rgb(16, 21, 92);}</style>
+</head>
+<body>
+    <h2>FIND</h2>
+   <ul class="LIST">
+       <li>Graphic Designing</li>    <!--IT'S use to find the 'li' tag to change anything-->
+       <li>Web Designing</li>
+       <li>Programming</li>
+       <ul>
+           <li>C Program</li>
+           <li>C++ Program</li>
+           <li>Java</li>
+       </ul>
+   </ul>
+
+    <script src="js/JQuery.js"></script>
+    <script>
+        $("document").ready(function(){
+            $("ul.LIST").find("li").css("background-color",'red')
+        });
+        
+    </script>
+</body>
+</html>

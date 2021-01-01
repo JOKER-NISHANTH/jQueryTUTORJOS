@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First _ Children</title><style>li{color: blue;}
+    /*.color{color:crimson;}
+    .color2{color:cyan;}*/
+    
+    </style>
+</head>
+<body>
+    <h2>nTH-CHILD in CSS (OR) eq() in jQuery</h2>
+   <ul class="LIST">
+       <li>Graphic Designing</li>    <!--IT'S use to find the 'li' tag to change anything-->
+       <li>Web Designing</li>
+       <li>Programming</li>
+       <ul>
+           <li>C Program</li>
+           <li>C++ Program</li>
+           <li>Java</li>
+       </ul>
+   </ul>
+
+    <script src="js/JQuery.js"></script>
+    <script>
+        $("document").ready(function(){
+          //  $('ul.LIST').children('li:nth-child(2)').text("This from CSS function to change nTH Child")
+            $('ul.LIST').children('li').eq(1).text('This is from eq function to change the element byjQurey')
+        });
+        
+    </script>
+</body>
+</html> 

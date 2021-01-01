@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd And Even Selector</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>DATA - 0</td>
+    <td>NISHANTH M</td>
+    <td>20</td>
+</tr>
+    <tr>
+        <td>DATA - 1</td>
+    <td>MOHAN M</td>
+    <td>45</td>
+</tr>
+    <tr>
+        <td>DATA - 2</td>
+    <td>NITHISH M</td>
+    <td>21</td>
+    </tr>
+    <tr>
+        <td>DATA -3</td>
+    <td>YALINI D</td>
+    <td>20</td>
+</tr>
+    <tr>
+        <td>DATA-4</td>
+    <td>MOORTHI</td>
+    <td>19</td>
+</tr>
+    <tr>
+        <td>DATA -5</td>
+    <td>DINESH</td>
+    <td>18</td>
+</tr>
+</table>
+    
+    <script src="js/JQuery.js"></script>
+    <script>
+        $("document").ready(function(){
+            $("tr:odd").css("background-color","purple")
+            $("tr:even").css("color","red")
+        });
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner Outer and Width Height</title>
+    <style>
+        div{
+            color: chocolate;
+            background:#0505db;
+            height: 150px;
+            width: 200px;
+            padding: 40px;
+            border:5px solid red;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div><h1>Hello Welcome To Nishanth class</h1></div>
+    <script src="js/JQuery.js"></script>
+    <script>
+        $('document').ready(function(){
+            //Inner Height Width = Element + Padding
+            console.log('InnerHeigth : ',$('div').innerHeight());
+            console.log('InnerWidth  : ',$('div').innerWidth());
+            //Outer Height Width = Element + Padding + Border
+            console.log('OuterHeight : ',$('div').outerHeight());
+            console.log('OuterWidth  : ',$('div').outerWidth());
+        });
+    </script>
+</body>
+</html>

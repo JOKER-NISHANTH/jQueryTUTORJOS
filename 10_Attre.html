@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <img src="img/img1.jpg"height=400px width="300px" alt="This is a  Image">
+    <script src="js/JQuery.js"></script>
+    <script>
+        $("document").ready(function(){
+            $("img").click(function(){
+             //  var a=$(this).attr("Hello")
+               //alert("Welcome")
+               
+                $(this).attr("src","img/img2.jpg");
+                $(this).attr("src","img/img3.jpg"); //It's Not working Only One is accept
+               
+              
+            });
+        });
+        
+    </script>
+</body>
+</html>
